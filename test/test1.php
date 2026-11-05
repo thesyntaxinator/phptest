@@ -1,1 +1,1 @@
-echo $_GET['asdf'];
+echo htmlspecialchars((string)($_GET['asdf'] ?? ''), ENT_QUOTES, 'UTF-8');
